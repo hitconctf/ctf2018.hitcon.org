@@ -17,7 +17,7 @@ var update_mini_scoreboard = function(){
 update_mini_scoreboard();
 
 var update_dashboard_problems = function(){
-    $.get("/dashboard/problem", function(data){
+    $.get(window.location.origin + "/dashboard/problem", function(data){
         $('#dashboard-problems').html(data);
         $('[data-toggle="tooltip"]').tooltip();
     });
