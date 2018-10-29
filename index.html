@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="HITCON CTF 2018"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://ctf2018.hitcon.org"/>
+    <meta property="og:image" content="http://ctf.hitcon.org/img/og_img.png"/>
+    <meta property="og:site_name" content="HITCON CTF 2018"/>
+    <meta property="og:description" content="Online Jeopardy, Oct 20-22, 2018"/>
+    <title>HITCON CTF 2018</title>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" type="image/png" href="/static/img/favicon.ico"/>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    
+    <script src="/static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav id="top-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">HITCON CTF 2018</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+            <li><a href="/dashboard/">Dashboard</a></li>            
+            <li><a href="/dashboard/scoreboard">Scoreboard</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">           
+            <li>
+              <a id="timer" href="#"></a>
+              <input type="hidden" id="contest_start_time" value="1540000800.0">
+              <input type="hidden" id="contest_end_time" value="1540173600.0">
+              <input type="hidden" id="current_time" value="1540792908.24">
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      
+<div id="home-masthead">
+	<div class="container">
+		<div class="title">HITCON CTF 2018</div>
+		<div class="subtitle">2018/10/20 02:00 UTC ~ 2018/10/22 02:00 UTC</div>
+		<div class="subtitle">freenode #hitconctf</div>
+		<form action="/dashboard/">
+			
+			<button id="btn-gotocontest" type="submit" class="btn btn-success btn-lg">Goto Contest</button>
+			
+		</form>
+		
+	</div>
+</div><!-- #home-masthead -->
+
+
+      <div id="content" class="container">
+        
+<div id="contest-info">
+	<h1>HITCON CTF 2018</h1>
+	<div class="col-lg-6">
+
+
+		<p><strong>時間為 10/20(六) 10:00 ~ 10/22(一) 10:00 (共48HR)</strong></p>
+		<p><strong>HITCON CTF 冠軍隊伍將可至拉斯維加斯參加 2019 DEFCON CTF 決賽</strong></p>
+<p><strong>更多細節請留意官方網站公布之相關資訊:<br/>
+<a href="http://ctf.hitcon.org">http://ctf.hitcon.org</a></strong><p>
+
+	</div>
+	<div class="col-lg-6">
+
+
+<p><strong>Time for HITCON CTF is Oct 20 10:00 AM ~ Oct 22 10:00 AM (GMT+8, 48 hours)</strong></p>
+<p><strong>HITCON CTF will be a qualifying contest of DEF CON CTF 2019 Final </strong></p>
+
+<p><strong>Please keep following our official website to get more details:<br>
+<a href="http://ctf.hitcon.org">http://ctf.hitcon.org</a></strong><p>
+
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>關卡類型</h2>
+<ul>
+	<li>Pwnable</li>
+	<li>Reverse</li>
+	<li>Web</li>
+	<li>Cryptography</li>
+	<li>MISC</li>
+</ul>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>Game types</h2>
+<ul>
+	<li>Pwnable</li>
+	<li>Reverse</li>
+	<li>Web</li>
+	<li>Cryptography</li>
+	<li>MISC</li>
+</ul>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>競賽說明</h2>
+<ul>
+	<li>10/13 20:00 開放線上註冊</li>
+	<li>為 48 小時的線上 Jeopardy 形式</li>
+	<li>競賽採取積分累計制，比賽結束後依分數高低判定優勝，提供決賽資格予優勝者。同分者，依最後一次正確提交的時間判定</li>
+        <li> Flag 形式為: hitcon{printable ascii+}
+	<li>出題關主與工作人員均不列入成績計算</li>
+</ul>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>Contest Information</h2>
+<ul>
+	<li>The registration link is available from 10/13 20:00.</li>
+	<li>Online jeopardy for 48 hours.</li>
+	<li>Solving each problem will get certain points. Winners will be ranked by points.If the points are the same, the winners will be ranked by time of the last correct submission.</li>
+        <li> Flag format: hitcon{printable ascii+} </li>
+	<li>Game makers and staffs will not be counted in the ranking process.</li>
+</ul>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>競賽時間</h2>
+<ul>
+	<li>10/20(六) 10:00 ~ 10/22(一) 10:00 (48HR)</li>
+</ul>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>Contest time</h2>
+<ul>
+<li>Oct 20 10:00 AM ~ Oct 22 10:00 AM (GMT+8, 48 hours)</li>
+</ul>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>獎金</h2>
+<ul>
+	<li>第一名獎金: $5,000 USD</li>
+	<li>第二名獎金: $2,500  USD</li>
+	<li>第三名獎金: $1,000  USD</li>
+	<li>臺灣隊伍特殊獎: $500 USD</li>
+</ul>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>Awards</h2>
+<ul>
+	<li>1st place: $5,000 USD</li>
+	<li>2nd place: $2,500  USD</li>
+	<li>3rd place: $1,000  USD</li>
+	<li>Special award for Top 1 Taiwan team: $500 USD</li>
+</ul>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>比賽注意事項</h2>
+<p>競賽期間，做出以下違規事項者將直接取消資格：</p>
+<ul>
+	<li>進行任何破壞競賽公平公正原則之行為</li>
+	<li>散播、與其它隊伍交換關卡金鑰</li>
+	<li>除競賽中提供的關卡外，禁止對競賽系統、參賽者及其它人員進行攻擊</li>
+</ul>
+<p>每位參賽者最多僅能參與一個隊伍</p>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>Contest rules</h2>
+<p>During the contest, any of the following behaviors will lead to disqualification:</p>
+<ul>
+	<li>Any behavior that compromises the fairness of contest</li>
+	<li>Publishing, exchanging problem solutions</li>
+	<li>Attacking any personnel, including participants and non-participants, or the contest system itself</li>
+</ul>
+<p>Each player can only join one team</p>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>保留權利</h2>
+<p>主辦單位可依現場狀況調整競賽的內容、流程及規則。</p>
+
+	</div>
+	<div class="col-lg-6">
+
+<h2>Rights reserved</h2>
+<p>Organizers may rearrange/modify contest problems, proceedings, and rules.</p>
+
+	</div>
+</div><!-- #contest-info -->
+
+      </div>
+
+      <div id="footer">
+        <p>&copy; HITCON CTF Team 2018 </p>
+        <p>Contact: hitconctfcontact@hitcon.org</p>
+      </div>
+
+      <script src="/static/js/vendor/jquery-2.1.1.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
+      <script src="/static/js/vendor/bootstrap.min.js"></script>
+      <script src="/static/js/vendor/bootstrap-confirmation.min.js"></script>
+      <script src="/static/js/vendor/markdown-it.min.js"></script>
+      <script src="/static/js/plugins.js"></script>
+      <script src="/static/js/main.js"></script>
+      <script>
+        var static_url = "/static/";
+        var refresh_interval = 86400 * 1000; 
+      </script>
+
+      
+      
+
+      
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68176757-4"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-68176757-4');
+      </script>
+      
+  </body>
+</html>
